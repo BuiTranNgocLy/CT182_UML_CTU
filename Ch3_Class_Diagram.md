@@ -112,3 +112,7 @@
 
 ![image](https://user-images.githubusercontent.com/88178841/142135678-eae580aa-d27e-43aa-9517-39051a80fb30.png)
 # D. Xây dựng một sơ đồ lớp
+
+<hr>
+
+**Author Bui Tran Ngoc Ly**
