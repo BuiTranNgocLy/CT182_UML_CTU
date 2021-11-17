@@ -44,7 +44,7 @@
 ## g. Sự kiện thời gian
 
 ![image](https://user-images.githubusercontent.com/88178841/142231928-3d150507-8ff6-4baf-b7fb-21475010ac09.png)
-- Sơ đồ hoạt động mô tả quá trình xử lý đơn đặt hàng với sự kiên thời gian.
+- VD: Sơ đồ hoạt động mô tả quá trình xử lý đơn đặt hàng với sự kiên thời gian.
    - Chú thích phía trên biểu tượng đồng hồ cát biểu thị thời gian phải đợi trước khi hành động tiếp theo được thực hiện. Mũi tên đi vào đồng hồ cát biểu thị sự kiện thời gian được kích hoạt chỉ một lần. 
 
 ![image](https://user-images.githubusercontent.com/88178841/142232052-ef13ab71-0e80-4f0c-8dd6-78e405c5ae98.png)
@@ -54,8 +54,26 @@
 
 ![image](https://user-images.githubusercontent.com/88178841/142232990-16c731b3-e20c-47e2-900d-e4325dafe358.png)
 ## h. Gửi & nhận tín hiệu
+- `Tín hiệu gửi` là các thông điệp được gửi đến một thành phần bên ngoài sơ đồ hoạt động.
+- `Tín hiệu nhận` là thông điệp mà một hành động trong sơ đồ hiện hành nhận được.
 
+![image](https://user-images.githubusercontent.com/88178841/142235374-799f23dc-4562-4fee-8c83-1430f43e37fa.png)
+- VD: Mô tả các tín hiệu nhận và gửi trong sơ đồ hoạt động của quá trình rút tiền tại máy ATM
+    - Sau khi khách hàng nhập mã PIN
+    - hệ thống quản lý tài khoản của ngân hàng sẽ kiểm tra tính hợp lệ của mã PIN và gửi một thông điệp đến máy ATM (tín hiệu nhận tại máy ATM)
+    - Tùy thuộc vào tín hiệu nhận được, máy ATM sẽ thực hiện các quyết định tiếp theo
+    - Khi một giao dịch hoàn thành máy ATM sẽ gửi một thông điệp (tín hiệu gửi) đến hệ thống quản lý thông điệp kết quả giao dịch (thành công hoặc thất bại).
 
+![image](https://user-images.githubusercontent.com/88178841/142235874-3102e2c7-a5bd-4b1c-a236-9d588dc3d3b2.png)
+# 3. PHÂN CHIA CÔNG VIỆC CÁC THÀNH PHẦN THAM GIA (PARTITION OR SWIMLANES)
+- VD: 8 Sơ đồ hoạt động của quá trình rút tiền tại máy ATM bao gồm ba thành phần tham gia:  khách hàng rút tiền, máy ATM, và phần mềm quản lý tài khoản khách hàng tại ngân hàng.
+    - khi khách hàng nhập mã PIN thì phần mềm quản lý tài khoản sẽ kiểm tra tính hợp lệ của mã PIN
+    - Nếu không hợp lệ máy ATM sẽ hủy bỏ giao dịch và trả lại thẻ cho khách hàng
+    - Ngược lại, máy ATM sẽ yêu cầu khách hàng nhập số tiền cần rút
+    - Nếu số tiền cần rút hợp lệ thì máy ATM sẽ lấy tiền từ hộp tiền đưa cho khách hàng và khách hàng nhận tiền.
+    - Đồng thời phần mềm quản lý cũng trừ tiền trong tài khoản của khách hàng.
 
+![image](https://user-images.githubusercontent.com/88178841/142236760-1748e41d-7982-4d12-ae7e-f1113d2ff645.png)
+ (CONTINUTE)....
 
 **Author Bui Tran Ngoc Ly**
