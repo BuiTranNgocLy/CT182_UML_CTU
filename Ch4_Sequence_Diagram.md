@@ -37,7 +37,7 @@
 # 3. Ví dụ
 - Sơ đồ tuần tự của chức năng đăng nhập. Xem xét đối tượng tài khoản
 
-![image](https://user-images.githubusercontent.com/88178841/142222944-4eb9abc1-bc21-452e-b37b-b12f89e4c0dd.png)
+![image](https://user-images.githubusercontent.com/88178841/142224086-6ed33a1f-db1e-4397-ab38-eee7957d6aea.png)
 - Có 3 đối tượng: người dùng, hệ thống và tài khoản. Giải thích luồng xử lí của chức năng như sau:
    - Người dùng gửi yêu cầu đăng nhập đến hệ thống
    - Hệ thống yêu cầu người dùng nhập email & mật khẩu
